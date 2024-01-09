@@ -15,7 +15,7 @@ app.disable('x-powered-by');
 // //   });
 // app.use(cors());
 
-app.use('*', createProxyMiddleware({ target: 'http://localhost:3100', changeOrigin: true }));
+app.use('*', createProxyMiddleware({ target: 'https://wikipedia.org', changeOrigin: true }));
 
 
 app.listen(3200, async () => {
