@@ -15,7 +15,7 @@ app.disable('x-powered-by');
 // //   });
 // app.use(cors());
 
-app.use('*', createProxyMiddleware({ target: 'https://wikipedia.org', changeOrigin: true }));
+app.use('*', createProxyMiddleware({ target: 'http://scratch.pixelbulb.online:3000', changeOrigin: false }));
 
 
 app.listen(443, async () => {
