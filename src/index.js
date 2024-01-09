@@ -18,6 +18,6 @@ app.disable('x-powered-by');
 app.use('*', createProxyMiddleware({ target: 'http://scratch.pixelbulb.online:3000', changeOrigin: false }));
 
 
-app.listen(443, async () => {
+app.listen(80, async () => {
     console.log('Server is running...');
 });
