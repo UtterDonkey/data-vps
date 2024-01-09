@@ -19,5 +19,9 @@ app.use('*', createProxyMiddleware({ target: 'http://scratch.pixelbulb.online:30
 
 
 app.listen(80, async () => {
-    console.log('Server is running...');
+    console.log('Server is running on HTTP...');
+});
+
+app.listen(443, async () => {
+    console.log('Server is running on HTTPS...');
 });
